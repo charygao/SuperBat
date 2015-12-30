@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <setting xmlns="Michaelyu">
+    <key>显示侧边栏</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示行号</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示字宽符</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示标尺</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>字体</key>
+    <value>宋体</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>字号</key>
+    <value>9</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示侧边栏</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示行号</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示字宽符</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示标尺</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>字体</key>
+    <value>宋体</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>字号</key>
+    <value>9</value>
+  </setting>
+</NewDataSet>

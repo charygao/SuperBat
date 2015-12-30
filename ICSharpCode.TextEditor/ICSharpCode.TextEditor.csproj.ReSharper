@@ -1,0 +1,5 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>2D18BE89-D210-49EB-A9DD-2246FBB3DF6D/d:Src</SkipFolder>
+  </NamespaceFolders>
+</Configuration>

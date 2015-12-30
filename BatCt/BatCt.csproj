@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{227362C5-92E1-4A68-AFF8-43D6B22A13F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BatCt</RootNamespace>
+    <AssemblyName>BatCt</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BatMaker.cs" />
+    <Compile Include="CommandSetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetter.Designer.cs">
+      <DependentUpon>CommandSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Assoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Assoc.Designer.cs">
+      <DependentUpon>Assoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\At.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\At.Designer.cs">
+      <DependentUpon>At.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Attrib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Attrib.Designer.cs">
+      <DependentUpon>Attrib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Bootcfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Bootcfg.Designer.cs">
+      <DependentUpon>Bootcfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Break.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Break.Designer.cs">
+      <DependentUpon>Break.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Cacls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Cacls.Designer.cs">
+      <DependentUpon>Cacls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Call.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Call.Designer.cs">
+      <DependentUpon>Call.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Cd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Cd.Designer.cs">
+      <DependentUpon>Cd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Chcp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Chcp.Designer.cs">
+      <DependentUpon>Chcp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Chkdsk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Chkdsk.Designer.cs">
+      <DependentUpon>Chkdsk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\ChkNTFS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\ChkNTFS.Designer.cs">
+      <DependentUpon>ChkNTFS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Cmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Cmd.Designer.cs">
+      <DependentUpon>Cmd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Color.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Color.Designer.cs">
+      <DependentUpon>Color.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Comp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Comp.Designer.cs">
+      <DependentUpon>Comp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Compact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Compact.Designer.cs">
+      <DependentUpon>Compact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Convert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Convert.Designer.cs">
+      <DependentUpon>Convert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Copy.Designer.cs">
+      <DependentUpon>Copy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Date.Designer.cs">
+      <DependentUpon>Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\DefaultCommandSetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\DefaultCommandSetter.Designer.cs">
+      <DependentUpon>DefaultCommandSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Del.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Del.Designer.cs">
+      <DependentUpon>Del.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Dir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Dir.Designer.cs">
+      <DependentUpon>Dir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\DiskComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\DiskComp.Designer.cs">
+      <DependentUpon>DiskComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\DiskCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\DiskCopy.Designer.cs">
+      <DependentUpon>DiskCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\DosKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\DosKey.Designer.cs">
+      <DependentUpon>DosKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Driverquery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Driverquery.Designer.cs">
+      <DependentUpon>Driverquery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Echo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Echo.Designer.cs">
+      <DependentUpon>Echo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Exit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Exit.Designer.cs">
+      <DependentUpon>Exit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Fc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Fc.Designer.cs">
+      <DependentUpon>Fc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\FindStr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\FindStr.Designer.cs">
+      <DependentUpon>FindStr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\For.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\For.Designer.cs">
+      <DependentUpon>For.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Format.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Format.Designer.cs">
+      <DependentUpon>Format.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Ftype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Ftype.Designer.cs">
+      <DependentUpon>Ftype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\GpResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\GpResult.Designer.cs">
+      <DependentUpon>GpResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Graftabl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Graftabl.Designer.cs">
+      <DependentUpon>Graftabl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Label.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Label.Designer.cs">
+      <DependentUpon>Label.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Md.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Md.Designer.cs">
+      <DependentUpon>Md.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\More.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\More.Designer.cs">
+      <DependentUpon>More.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Move.Designer.cs">
+      <DependentUpon>Move.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Path.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Path.Designer.cs">
+      <DependentUpon>Path.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Promptp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Promptp.Designer.cs">
+      <DependentUpon>Promptp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Pushd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Pushd.Designer.cs">
+      <DependentUpon>Pushd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Rd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Rd.Designer.cs">
+      <DependentUpon>Rd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Recover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Recover.Designer.cs">
+      <DependentUpon>Recover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Ren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Ren.Designer.cs">
+      <DependentUpon>Ren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Replace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Replace.Designer.cs">
+      <DependentUpon>Replace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Set.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Set.Designer.cs">
+      <DependentUpon>Set.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Shift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Shift.Designer.cs">
+      <DependentUpon>Shift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandSetters\Subst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandSetters\Subst.Designer.cs">
+      <DependentUpon>Subst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Priview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Priview.Designer.cs">
+      <DependentUpon>Priview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CommandSetter.resx">
+      <DependentUpon>CommandSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Assoc.resx">
+      <DependentUpon>Assoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\At.resx">
+      <DependentUpon>At.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Attrib.resx">
+      <DependentUpon>Attrib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Bootcfg.resx">
+      <DependentUpon>Bootcfg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Break.resx">
+      <DependentUpon>Break.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Cacls.resx">
+      <DependentUpon>Cacls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Call.resx">
+      <DependentUpon>Call.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Cd.resx">
+      <DependentUpon>Cd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Chcp.resx">
+      <DependentUpon>Chcp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Chkdsk.resx">
+      <DependentUpon>Chkdsk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\ChkNTFS.resx">
+      <DependentUpon>ChkNTFS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Cmd.resx">
+      <DependentUpon>Cmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Color.resx">
+      <DependentUpon>Color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Comp.resx">
+      <DependentUpon>Comp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Compact.resx">
+      <DependentUpon>Compact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Convert.resx">
+      <DependentUpon>Convert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Copy.resx">
+      <DependentUpon>Copy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Date.resx">
+      <DependentUpon>Date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\DefaultCommandSetter.resx">
+      <DependentUpon>DefaultCommandSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Del.resx">
+      <DependentUpon>Del.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Dir.resx">
+      <DependentUpon>Dir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\DiskComp.resx">
+      <DependentUpon>DiskComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\DiskCopy.resx">
+      <DependentUpon>DiskCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\DosKey.resx">
+      <DependentUpon>DosKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Driverquery.resx">
+      <DependentUpon>Driverquery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Echo.resx">
+      <DependentUpon>Echo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Exit.resx">
+      <DependentUpon>Exit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Fc.resx">
+      <DependentUpon>Fc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\FindStr.resx">
+      <DependentUpon>FindStr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\For.resx">
+      <DependentUpon>For.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Format.resx">
+      <DependentUpon>Format.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Ftype.resx">
+      <DependentUpon>Ftype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\GpResult.resx">
+      <DependentUpon>GpResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Graftabl.resx">
+      <DependentUpon>Graftabl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Label.resx">
+      <DependentUpon>Label.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Md.resx">
+      <DependentUpon>Md.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\More.resx">
+      <DependentUpon>More.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Move.resx">
+      <DependentUpon>Move.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Path.resx">
+      <DependentUpon>Path.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Promptp.resx">
+      <DependentUpon>Promptp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Pushd.resx">
+      <DependentUpon>Pushd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Rd.resx">
+      <DependentUpon>Rd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Recover.resx">
+      <DependentUpon>Recover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Ren.resx">
+      <DependentUpon>Ren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Replace.resx">
+      <DependentUpon>Replace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Set.resx">
+      <DependentUpon>Set.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Shift.resx">
+      <DependentUpon>Shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandSetters\Subst.resx">
+      <DependentUpon>Subst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Priview.resx">
+      <DependentUpon>Priview.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

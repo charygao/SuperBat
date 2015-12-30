@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <setting xmlns="Michaelyu">
+    <key>显示侧边栏</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示行号</key>
+    <value>True</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示字宽符</key>
+    <value>True</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示标尺</key>
+    <value>True</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>字体</key>
+    <value>宋体</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>字号</key>
+    <value>9</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示侧边栏</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示行号</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示字宽符</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>显示标尺</key>
+    <value>true</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>字体</key>
+    <value>宋体</value>
+  </setting>
+  <setting xmlns="Michaelyu">
+    <key>字号</key>
+    <value>9</value>
+  </setting>
+  <code xmlns="Michaelyu">
+    <key>0e7a9a17-c7e4-4e41-8191-dcf742fbb966</key>
+    <title>显示计算机硬件信息</title>
+    <discription>显示计算机硬件信息</discription>
+    <codeString>start C:\WINDOWS\PCHealth\HelpCtr\System\sysinfo\sysComponentInfo.htm</codeString>
+  </code>
+  <code xmlns="Michaelyu">
+    <key>9a781dc7-7819-44d1-af56-348c436f3ae8</key>
+    <title>显示进程信息</title>
+    <discription>显示进程信息</discription>
+    <codeString>@echo for each ps in getobject _ &gt;ps.vbs
+@echo ("winmgmts:\\.\root\cimv2:win32_process").instances_ &gt;&gt;ps.vbs
+@echo wscript.echo ps.handle^&amp;vbtab^&amp;ps.name^&amp;vbtab^&amp;ps.executablepath:next &gt;&gt;ps.vbs
+cscript //nologo ps.vbs &amp; del ps.vbs
+pause</codeString>
+  </code>
+  <code xmlns="Michaelyu">
+    <key>5d50c1cc-ddb4-45fc-ae99-a2434b65974b</key>
+    <title>删除自己</title>
+    <discription>删除自己</discription>
+    <codeString>del %0</codeString>
+  </code>
+  <code xmlns="Michaelyu">
+    <key>d5b58f5d-118b-4298-b7b8-6cb99437d6ce</key>
+    <title>打开网址</title>
+    <discription>打开MichaelYU的Blog</discription>
+    <codeString>start http://www.cnblogs.com/michaelyu/</codeString>
+  </code>
+  <code xmlns="Michaelyu">
+    <key>cbef61c2-b6cd-4307-8370-04aa876f8ff9</key>
+    <title>清理垃圾文件</title>
+    <discription>清除系统垃圾文件</discription>
+    <codeString>@echo off
+echo 正在清除系统垃圾文件，请稍等......
+del /f /s /q "%userprofile%\Local Settings\Temporary Internet Files\*.*"
+del /f /s /q "%userprofile%\Local Settings\Temp\*.*"
+del /f /s /q "%userprofile%\recent\*.*"
+del /f /s /q %systemdrive%\*.tmp
+del /f /s /q %systemdrive%\*._mp
+del /f /s /q %systemdrive%\*.log
+del /f /s /q %systemdrive%\*.gid
+del /f /s /q %systemdrive%\*.chk
+del /f /s /q %systemdrive%\*.old
+del /f /s /q %systemdrive%\recycled\*.*
+del /f /s /q %windir%\*.bak
+del /f /s /q %windir%\prefetch\*.*
+del /f /s /q %windir%\temp\*.*
+del /f /q %userprofile%\cookies\*.*
+del /f /q %userprofile%\recent\*.*
+
+echo 清除完成！
+echo. &amp; pause
+</codeString>
+  </code>
+</NewDataSet>

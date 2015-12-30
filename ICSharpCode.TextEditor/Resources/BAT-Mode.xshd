@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+
+<!-- 俞翀 2010-4-22 -->
+<SyntaxDefinition name = "BAT" extensions = ".bat">
+
+  <Environment>
+    <Default      color = "Black" bgcolor = "White"/>
+    <Selection    color = "Purple" bgcolor = "#999900"/>
+    <VRuler       color = "Green"/>
+    <InvalidLines color = "Red"/>
+    <CaretMarker  color = "Yellow"/>
+
+    <LineNumbers  color = "Purple" bgcolor = "White"/>
+
+    <FoldLine     color = "Cyan" bgcolor = "Black"/>
+    <FoldMarker   color = "Cyan" bgcolor = "White"/>
+    <SelectedFoldLine color = "Green" bgcolor="Black"/>
+
+    <EOLMarkers   color = "#E0E0E5"/>
+    <SpaceMarkers color = "#E0E0E5"/>
+    <TabMarkers   color = "#E0E0E5"/>
+  </Environment>
+
+  <Digits name = "Digits"   bold = "false" italic = "false" color = "Red"/>
+
+  <RuleSets>
+    <RuleSet   ignorecase = "true">
+      <Delimiters>&amp;&lt;&gt;@~!%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+
+      <Span name = "String" bold = "false" italic = "false" color = "Blue" stopateol = "true" escapecharacter="\">
+        <Begin>"</Begin>
+        <End>"</End>
+      </Span>
+
+      <Span name = "LineComment" rule = "CommentMarkerSet" bold = "false" italic = "true" color = "Green" stopateol = "true">
+        <Begin>::</Begin>
+      </Span>
+      <Span name = "LineComment2" rule = "CommentMarkerSet" bold = "false" italic = "true" color = "Green" stopateol = "true">
+        <Begin>REM</Begin>
+      </Span>
+
+
+
+
+      <MarkPrevious bold = "false" italic = "false" color = "MidnightBlue">(</MarkPrevious>
+
+
+      <KeyWords name = "Punctuation" bold = "false" italic = "false" color = "DarkGreen">
+        <Key word = "?" />
+        <Key word = "," />
+        <Key word = "." />
+        <Key word = ";" />
+        <Key word = "(" />
+        <Key word = ")" />
+        <Key word = "[" />
+        <Key word = "]" />
+        <Key word = "{" />
+        <Key word = "}" />
+        <Key word = "+" />
+        <Key word = "-" />
+        <Key word = "/" />
+        <Key word = "%" />
+        <Key word = "*" />
+        <Key word = "&lt;" />
+        <Key word = "&gt;" />
+        <Key word = "^" />
+        <Key word = "=" />
+        <Key word = "~" />
+        <Key word = "!" />
+        <Key word = "|" />
+        <Key word = "&amp;" />
+      </KeyWords>
+
+      <KeyWords name = "Punctuation2" bold = "false" italic = "false" color = "Green">
+        <Key word = "@" />
+      </KeyWords>
+
+      <KeyWords name = "OperatorKeywords" bold="false" italic="false" color="#006600">
+        <Key word = "Arp" />
+        <Key word = "Assoc" />
+        <Key word = "At" />
+        <Key word = "Atmadm" />
+        <Key word = "Attrib" />
+        <Key word = "Bootcfg" />
+        <Key word = "Break" />
+        <Key word = "Cacls" />
+        <Key word = "Call" />
+        <Key word = "Certreq" />
+        <Key word = "Certutil" />
+        <Key word = "Change" />
+        <Key word = "Chcp" />
+        <Key word = "Chdir" />
+        <Key word = "Chkdsk" />
+        <Key word = "Chkntfs" />
+        <Key word = "Choice" />
+        <Key word = "Cipher" />
+        <Key word = "Clip" />
+        <Key word = "Cls" />
+        <Key word = "Cluadmin" />
+        <Key word = "Cluster" />
+        <Key word = "Cmd" />
+        <Key word = "Cmdkey" />
+        <Key word = "Cmstp" />
+        <Key word = "Color" />
+        <Key word = "Comp" />
+        <Key word = "Compact" />
+        <Key word = "Convert" />
+        <Key word = "Convlog" />
+        <Key word = "Copy" />
+        <Key word = "Cprofile" />
+        <Key word = "CScript" />
+        <Key word = "Csvde" />
+        <Key word = "Date" />
+        <Key word = "Dcgpofix" />
+        <Key word = "Defrag" />
+        <Key word = "Del" />
+        <Key word = "Dfscmd" />
+        <Key word = "Dir" />
+        <Key word = "Diskcomp" />
+        <Key word = "Diskcopy" />
+        <Key word = "DiskPart" />
+        <Key word = "Doskey" />
+        <Key word = "Driverquery" />
+        <Key word = "Dsadd" />
+        <Key word = "Dsget" />
+        <Key word = "Dsmod" />
+        <Key word = "Dsmove" />
+        <Key word = "Dsquery" />
+        <Key word = "Dsrm" />
+        <Key word = "Echo" />
+        <Key word = "Endlocal" />
+        <Key word = "Eventcreate" />
+        <Key word = "Eventquery" />
+        <Key word = "Eventtriggers" />
+        <Key word = "Evntcmd" />
+        <Key word = "Exit" />
+        <Key word = "Expand" />
+        <Key word = "Fc" />
+        <Key word = "Find" />
+        <Key word = "Findstr" />
+        <Key word = "Finger" />
+        <Key word = "Flattemp" />
+        <Key word = "For" />
+        <Key word = "Forfiles" />
+        <Key word = "Format" />
+        <Key word = "Freedisk" />
+        <Key word = "Fsutil" />
+        <Key word = "Ftp" />
+        <Key word = "Ftype" />
+        <Key word = "Getmac" />
+        <Key word = "Gettype" />
+        <Key word = "Goto" />
+        <Key word = "Gpresult" />
+        <Key word = "Gpupdate" />
+        <Key word = "Graftabl" />
+        <Key word = "Help" />
+        <Key word = "Helpctr" />
+        <Key word = "Hostname" />
+        <Key word = "If" />
+        <Key word = "Iisapp" />
+        <Key word = "Iisback" />
+        <Key word = "Iiscnfg" />
+        <Key word = "Iisext" />
+        <Key word = "Iisftp" />
+        <Key word = "Iisftpdr" />
+        <Key word = "Iisreset" />
+        <Key word = "Iisvdir" />
+        <Key word = "Iisweb" />
+        <Key word = "Inuse" />
+        <Key word = "Ipconfig" />
+        <Key word = "Ipxroute" />
+        <Key word = "Irftp" />
+        <Key word = "Label" />
+        <Key word = "Ldifde" />
+        <Key word = "Lodctr" />
+        <Key word = "Logman" />
+        <Key word = "Lpq" />
+        <Key word = "Lpr" />
+        <Key word = "Macfile" />
+        <Key word = "Md" />
+        <Key word = "Mkdir" />
+        <Key word = "Mmc" />
+        <Key word = "Mode" />
+        <Key word = "More" />
+        <Key word = "Mountvol" />
+        <Key word = "Move" />
+        <Key word = "Mrinfo" />
+        <Key word = "Msiexec" />
+        <Key word = "Msinfo32" />
+        <Key word = "Nbtstat" />
+        <Key word = "Net" />
+        <Key word = "Netsh" />
+        <Key word = "Netstat" />
+        <Key word = "Nlb" />
+        <Key word = "Nlbmgr" />
+        <Key word = "Nslookup" />
+        <Key word = "Ntbackup" />
+        <Key word = "Ntcmdprompt" />
+        <Key word = "Ntdsutil" />
+        <Key word = "Ntsd" />
+        <Key word = "Openfiles" />
+        <Key word = "Pagefileconfig" />
+        <Key word = "Path" />
+        <Key word = "Pathping" />
+        <Key word = "Pause" />
+        <Key word = "Pbadmin" />
+        <Key word = "Pentnt" />
+        <Key word = "Perfmon" />
+        <Key word = "Ping" />
+        <Key word = "Popd" />
+        <Key word = "Powercfg" />
+        <Key word = "Print" />
+        <Key word = "Prncnfg" />
+        <Key word = "Prndrvr" />
+        <Key word = "Prnjobs" />
+        <Key word = "Prnmngr" />
+        <Key word = "Prnport" />
+        <Key word = "Prnqctl" />
+        <Key word = "Prompt" />
+        <Key word = "Pushd" />
+        <Key word = "Query" />
+        <Key word = "Rasdial" />
+        <Key word = "Rcp" />
+        <Key word = "Rd" />
+        <Key word = "Recover" />
+        <Key word = "Reg" />
+        <Key word = "Regsvr32" />
+        <Key word = "Relog" />
+        <Key word = "Rename" />
+        <Key word = "Replace" />
+        <Key word = "Reset" />
+        <Key word = "Rexec" />
+        <Key word = "Risetup" />
+        <Key word = "Rmdir" />
+        <Key word = "Route" />
+        <Key word = "Rsh" />
+        <Key word = "Rsm" />
+        <Key word = "Rss" />
+        <Key word = "Runas" />
+        <Key word = "Sc" />
+        <Key word = "Schtasks" />
+        <Key word = "Secedit" />
+        <Key word = "Set" />
+        <Key word = "Setlocal" />
+        <Key word = "Setx" />
+        <Key word = "Shift" />
+        <Key word = "Shutdown" />
+        <Key word = "Sort" />
+        <Key word = "Start" />
+        <Key word = "Subst" />
+        <Key word = "Sysocmgr" />
+        <Key word = "Systeminfo" />
+        <Key word = "Takeown" />
+        <Key word = "Tapicfg" />
+        <Key word = "Taskkill" />
+        <Key word = "Tasklist" />
+        <Key word = "Tcmsetup" />
+        <Key word = "Telnet" />
+        <Key word = "Tftp" />
+        <Key word = "Time" />
+        <Key word = "Timeout" />
+        <Key word = "Title" />
+        <Key word = "Tracerpt" />
+        <Key word = "Tracert" />
+        <Key word = "Tree" />
+        <Key word = "Tsecimp" />
+        <Key word = "Type" />
+        <Key word = "Typeperf" />
+        <Key word = "Unlodctr" />
+        <Key word = "Ver" />
+        <Key word = "Verify" />
+        <Key word = "Vol" />
+        <Key word = "Vssadmin" />
+        <Key word = "W32tm" />
+        <Key word = "Waitfor" />
+        <Key word = "Where" />
+        <Key word = "Whoami" />
+        <Key word = "Winnt" />
+        <Key word = "Winnt32" />
+        <Key word = "Winpop" />
+        <Key word = "Wlbs" />
+        <Key word = "Wscript" />
+        <Key word = "Xcopy" />
+      </KeyWords>
+    </RuleSet>
+
+
+    <RuleSet name = "CommentMarkerSet" ignorecase = "false">
+      <Delimiters>&lt;&gt;~!@%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+    </RuleSet>
+  </RuleSets>
+
+</SyntaxDefinition>

@@ -1,0 +1,15 @@
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\bin\Release\BAT.exe.config
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\bin\Release\BAT.exe
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\bin\Release\BAT.pdb
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\bin\Release\BatCt.dll
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\bin\Release\ICSharpCode.TextEditor.dll
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\bin\Release\BatCt.pdb
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\obj\Release\BAT.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\obj\Release\BAT.AboutBox1.resources
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\obj\Release\BAT.AddToList.resources
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\obj\Release\BAT.BatManager.resources
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\obj\Release\BAT.Find.resources
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\obj\Release\BAT.Properties.Resources.resources
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\obj\Release\BAT.csproj.GenerateResource.Cache
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\obj\Release\BAT.exe
+D:\Program Files\HK\Desktop\GitHub\SuperBat-charymake\BAT\obj\Release\BAT.pdb
